@@ -18,5 +18,8 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
   },
-  plugins: [vue(), glsl()]
+  plugins: [vue(), glsl()],
+  server: {
+    host: `0.0.0.0`
+  }
 })

@@ -36,14 +36,6 @@ export default class World
 
     debugObjects()
     {
-        if(this.debug)
-        {
-            this.debugFolder = this.debug.addFolder('Cube')
-
-            this.debugFolder
-            .addColor(this.cube.material, 'color' )
-        }
-
         
     }
 
@@ -53,11 +45,7 @@ export default class World
 
     update()
     {
-        if(this.cube)
-        {
-            this.cube.rotation.x += this.time.delta * 0.001
-            this.cube.rotation.y += this.time.delta * 0.0025
-        }
+        
     }
 
     destroy()
